@@ -7,18 +7,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.ImageView;
 
 public class mainActivity extends AppCompatActivity {
 
     EditText name, password;
     Button LoginBtn, SignUpBtn;
     TextView forgotpass;
+    ImageView logo;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loginpage);
+        logo = (ImageView) findViewById(R.id.logo);
         name = (EditText) findViewById(R.id.usertxt);
         password = (EditText) findViewById(R.id.passtxt);
         SignUpBtn = (Button) findViewById(R.id.SignUpBtn);

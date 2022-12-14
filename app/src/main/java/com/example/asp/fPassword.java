@@ -7,16 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class fPassword extends AppCompatActivity{
     EditText nameFP, passwordFP, repasswordFP;
     Button confirmBtnFP, loginPageBtnFP;
+    ImageView logoFP;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fpasswordpage);
+        logoFP = (ImageView) findViewById(R.id.logoFP);
         nameFP = (EditText) findViewById(R.id.usertxtFP);
         passwordFP = (EditText) findViewById(R.id.passtxtFP);
         repasswordFP = (EditText) findViewById(R.id.RePasstxtFP);

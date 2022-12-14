@@ -41,17 +41,18 @@
         tools:ignore="TextContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logoFP"
         android:layout_width="350dp"
         android:layout_height="150dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="31dp"
         android:layout_marginBottom="30dp"
-        android:background="#FFFFFF"
+        android:src="@drawable/biglogo"
         app:layout_constraintBottom_toTopOf="@+id/changePasslbl"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/changePasslbl"
@@ -67,7 +68,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/usertxtSI"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/logoFP" />
 
     <EditText
         android:id="@+id/usertxtSI"

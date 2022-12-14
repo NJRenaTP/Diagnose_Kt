@@ -7,16 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class signIn extends AppCompatActivity {
 
     EditText nameSI, passwordSI, repasswordSI;
     Button confirmBtnSI, loginPageBtnSI;
+    ImageView logo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registrationpage);
+        logo = (ImageView) findViewById(R.id.logoFP);
         nameSI = (EditText) findViewById(R.id.usertxtSI);
         passwordSI = (EditText) findViewById(R.id.passtxtSI);
         repasswordSI = (EditText) findViewById(R.id.RePasstxtSI);
