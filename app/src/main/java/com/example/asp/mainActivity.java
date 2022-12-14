@@ -19,6 +19,14 @@ public class mainActivity extends AppCompatActivity {
         setContentView(R.layout.loginpage);
         name = (EditText) findViewById(R.id.usertxt);
         password = (EditText) findViewById(R.id.passtxt);
+        if(name.isempty()){
+            editTextName.setError("Name is Required");
+            editTextName.requestFocus();
+        }
+        if(password.isempty()){
+            editTextName.setError("Password is Required");
+            editTextName.requestFocus();
+        }
         SignUpBtn = (Button) findViewById(R.id.SignUpBtn);
         LoginBtn = (Button) findViewById(R.id.LoginBtn);
 
