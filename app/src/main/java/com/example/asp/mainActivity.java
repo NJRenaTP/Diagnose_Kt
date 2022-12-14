@@ -12,6 +12,8 @@ public class mainActivity extends AppCompatActivity {
 
     EditText name, password;
     Button LoginBtn, SignUpBtn;
+    TextView forgotpass;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,14 +23,43 @@ public class mainActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.passtxt);
         SignUpBtn = (Button) findViewById(R.id.SignUpBtn);
         LoginBtn = (Button) findViewById(R.id.LoginBtn);
+        forgotpass = (TextView) findViewById(R.id.forgotpass);
 
         LoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View args0) {
-                setContentView(R.layout.recommendation);
+                openhomeScreen();
+
             }
         });
 
+        SignUpBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                opensignIn();
+            }
+        });
 
+        forgotpass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openfPassword();
+            }
+        });
+    }
+
+    public void opensignIn() {
+        Intent intent = new Intent(this, signIn.class);
+        startActivity(intent);
+    }
+
+    public void openhomeScreen() {
+        Intent intent = new Intent(this, profile.class);
+        startActivity(intent);
+    }
+
+    public void openfPassword() {
+        Intent intent = new Intent(this, fPassword.class);
+        startActivity(intent);
     }
 }

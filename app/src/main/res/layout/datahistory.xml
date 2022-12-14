@@ -13,7 +13,7 @@
         android:layout_marginStart="31dp"
         android:layout_marginTop="20dp"
         android:background="#202020"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationViewDH"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FL2">
 
@@ -33,9 +33,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView2"
+        android:id="@+id/bottomNavigationViewDH"
         android:layout_width="415dp"
         android:layout_height="70dp"
+        app:itemBackground="@color/black"
+        app:menu="@menu/navbar"
+        app:itemIconSize="40dp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

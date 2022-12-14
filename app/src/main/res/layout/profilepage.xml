@@ -25,70 +25,109 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="244dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/fredoka_one"
         android:text="Edit Your Details"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/usertxtPP"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/usertxt3"
+    <EditText
+        android:id="@+id/usertxtPP"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="5dp"
         android:background="#131313"
         android:fontFamily="@font/baloo_paaji"
         android:foregroundTint="#2E2ABD"
-        android:text="Username..."
+        android:hint="Username..."
         android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="284dp" />
+        app:layout_constraintBottom_toTopOf="@+id/passtxtPP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historylbl3" />
 
-    <TextView
-        android:id="@+id/passtxt3"
+    <EditText
+        android:id="@+id/passtxtPP"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="5dp"
         android:fontFamily="@font/baloo_paaji"
-        android:text="Password..."
+        android:hint="Password..."
         android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="357dp" />
+        app:layout_constraintBottom_toTopOf="@+id/repasstxtPP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usertxtPP" />
 
-    <TextView
-        android:id="@+id/passtxt4"
+    <EditText
+        android:id="@+id/repasstxtPP"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="30dp"
         android:fontFamily="@font/baloo_paaji"
-        android:text="Re-enter Password..."
+        android:hint="Re-enter Password..."
         android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="433dp" />
+        app:layout_constraintBottom_toTopOf="@+id/logoutBtnPP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passtxtPP" />
 
     <Button
-        android:id="@+id/logoutBtn"
+        android:id="@+id/logoutBtnPP"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="20dp"
         android:background="#131313"
         android:fontFamily="@font/fredoka_one"
         android:text="LOGOUT"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:ignore="TextContrastCheck"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="560dp" />
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationViewPP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repasstxtPP"
+        tools:ignore="TextContrastCheck" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView2"
+        android:id="@+id/bottomNavigationViewPP"
         android:layout_width="415dp"
         android:layout_height="70dp"
-        tools:layout_editor_absoluteY="661dp" />
+        android:layout_marginTop="20dp"
+        app:itemBackground="@color/black"
+        app:itemIconSize="40dp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutBtnPP"
+        app:menu="@menu/navbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

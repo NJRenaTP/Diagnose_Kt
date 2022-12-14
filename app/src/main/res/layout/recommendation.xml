@@ -38,10 +38,15 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="415dp"
         android:layout_height="70dp"
+        app:itemBackground="@color/black"
+        app:itemIconSize="40dp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FL2" />
+        app:layout_constraintTop_toBottomOf="@+id/FL2"
+        app:menu="@menu/navbar" />
 
     <FrameLayout
         android:id="@+id/FL1"

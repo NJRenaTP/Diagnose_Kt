@@ -25,6 +25,11 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity android:name=".signIn" />
+        <activity android:name=".fPassword" />
+        <activity android:name=".homeScreen" />
+        <activity android:name=".profile" />
+        <activity android:name=".datahistory" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

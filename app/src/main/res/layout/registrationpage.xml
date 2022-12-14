@@ -7,7 +7,7 @@
     android:background="#131313">
 
     <Button
-        android:id="@+id/loginBtn"
+        android:id="@+id/confirmBtnSI"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="350dp"
         android:layout_height="50dp"
@@ -20,11 +20,11 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RePasstxt"
+        app:layout_constraintTop_toBottomOf="@+id/RePasstxtSI"
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/loginPageBtn"
+        android:id="@+id/loginPageBtnSI"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="350dp"
         android:layout_height="50dp"
@@ -37,7 +37,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/confirmBtnSI"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
@@ -48,13 +48,13 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="30dp"
         android:background="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/loginlbl"
+        app:layout_constraintBottom_toTopOf="@+id/changePasslbl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/loginlbl"
+        android:id="@+id/changePasslbl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -65,12 +65,12 @@
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/usertxt2"
+        app:layout_constraintBottom_toTopOf="@+id/usertxtSI"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <TextView
-        android:id="@+id/usertxt2"
+    <EditText
+        android:id="@+id/usertxtSI"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
@@ -83,12 +83,12 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="normal"
-        app:layout_constraintBottom_toTopOf="@+id/passtxt2"
+        app:layout_constraintBottom_toTopOf="@+id/passtxtSI"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginlbl" />
+        app:layout_constraintTop_toBottomOf="@+id/changePasslbl" />
 
-    <TextView
-        android:id="@+id/passtxt2"
+    <EditText
+        android:id="@+id/passtxtSI"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
@@ -99,12 +99,12 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/RePasstxt"
+        app:layout_constraintBottom_toTopOf="@+id/RePasstxtSI"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usertxt2" />
+        app:layout_constraintTop_toBottomOf="@+id/usertxtSI" />
 
-    <TextView
-        android:id="@+id/RePasstxt"
+    <EditText
+        android:id="@+id/RePasstxtSI"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
@@ -115,7 +115,7 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintBottom_toTopOf="@+id/confirmBtnSI"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passtxt2" />
+        app:layout_constraintTop_toBottomOf="@+id/passtxtSI" />
 </androidx.constraintlayout.widget.ConstraintLayout>
