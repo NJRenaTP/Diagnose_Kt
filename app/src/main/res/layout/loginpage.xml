@@ -41,17 +41,16 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <TextView
+    <EditText
         android:id="@+id/usertxt"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:background="#131313"
         android:fontFamily="@font/baloo_paaji"
-        android:foregroundTint="#2E2ABD"
-        android:text="Username..."
+        android:hint="Username..."
+        android:textColorHint="#FFFFFF"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="normal"
@@ -75,7 +74,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LoginBtn" />
 
-    <TextView
+    <EditText
         android:id="@+id/passtxt"
         android:layout_width="350dp"
         android:layout_height="50dp"
@@ -83,7 +82,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
         android:fontFamily="@font/baloo_paaji"
-        android:text="Password..."
+        android:hint="Password..."
+        android:textColorHint="#FFFFFF"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
