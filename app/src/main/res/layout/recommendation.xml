@@ -67,9 +67,8 @@
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_marginStart="20dp"
-            android:fontFamily="@font/fredoka_one"
             android:text="LATEST"
-            android:textColor="#FF0002"
+            android:textColor="#FFEB3B"
             android:textSize="24sp" />
 
         <TextView
@@ -80,7 +79,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginBottom="20dp"
             android:text="Potassium Level (mEq/L)"
-            android:textColor="#FFFFFF" />
+            android:textColor="#E91E63" />
 
         <TextView
             android:id="@+id/textView3"
@@ -90,7 +89,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="20dp"
             android:text="15/12/2022"
-            android:textColor="#FFFFFF" />
+            android:textColor="#E91E63" />
 
         <TextView
             android:id="@+id/textView4"
@@ -100,17 +99,17 @@
             android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
             android:text="09:48:03"
-            android:textColor="#FFFFFF" />
+            android:textColor="#E91E63" />
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="50dp"
             android:layout_marginStart="135dp"
             android:layout_marginTop="75dp"
             android:layout_marginBottom="20dp"
-            android:text="5.98"
-            android:textColor="#FF0002"
+            android:text="2"
+            android:textColor="#2196F3"
             android:textSize="40sp"
             android:textStyle="bold" />
     </FrameLayout>

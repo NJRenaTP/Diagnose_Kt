@@ -48,20 +48,19 @@ public class homeScreen extends AppCompatActivity {
                 return false;
             }
         });
-//        test = findViewById(R.id.textView5);
-//        int test1 = 0;
-//        test1 = Integer.parseInt((String) test.getText());
+        test = findViewById(R.id.textView5);
+        float test1 = Float.parseFloat(test.getText().toString());
 
 //        t1 = TextView.findViewById(R.id.textView5);
 //        TextView textView5 = (TextView)findViewById(R.id.textView5);
 //        int y = Integer.getInteger(String.valueOf(textView5));
 
-        if (textView5 >= 3.5 && textView5 <= 5.2) {
+        if (test1 >= 3.5 && test1 <= 5.2) {
             TextView textView6 = (TextView)findViewById(R.id.textView6);
             textView6.setText("Your Potassium level is at the normal range.");
         }
 
-        else if (textView5 < 3.5) {
+        else if (test1 < 3.5) {
             TextView textView6 = (TextView)findViewById(R.id.textView6);
             textView6.setText("Your Potassium level is below the normal range (3.5 to 5.2 mEq/L). You are at risk of getting Hypokalemia." +
                     "\nDo you want to see a doctor to get more accurate result?" +
@@ -69,7 +68,7 @@ public class homeScreen extends AppCompatActivity {
                     "\n- Consume more food or drinks that are high in potassium" +
                     "\n- Exercise more regularly");
         }
-        else if (textView5 > 5.2) {
+        else if (test1 > 5.2) {
             TextView textView6 = (TextView)findViewById(R.id.textView6);
             textView6.setText("Your Potassium level is above the normal range (3.5 to 5.2 mEq/L). You are at risk of getting Hyperkalemia." +
                     "\nDo you want to see a doctor to get more accurate result?" +
